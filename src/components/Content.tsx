@@ -3,14 +3,14 @@ import { useGetPostsQuery } from '../hooks/posts/posts';
 import BlogCard from './BlogCard';
 
 function Content() {
-  const { data, isLoading, isError } = useGetPostsQuery();
+  const { data, isLoading, error } = useGetPostsQuery();
 
   if (isLoading) {
     return (
       <i className="p-icon--spinner u-animation--spin" />
     );
   }
-  if (isError) {
+  if (error) {
     return (
       <div className="p-notification--negative">
         <div className="p-notification__content">
@@ -23,7 +23,6 @@ function Content() {
 
   let blogCards: JSX.Element[] = [];
   if (data) {
-    console.log('data', data);
     blogCards = data.map((post) => <BlogCard post={post} key={post.id} />);
   }
 

@@ -1,7 +1,7 @@
 import { DateTime } from 'luxon';
 import { Post } from '../hooks/posts/model';
 
-export const processPosts = (fetchedPosts: Post[]) => {
+export const processPosts = (fetchedPosts: Post[]): Post[] => {
   const posts = fetchedPosts.map((post) => {
     const categoryId = post.categories.length > 0 ? post.categories[0] : null;
     const topicId = post.topic.length > 0 ? post.topic[0] : null;
