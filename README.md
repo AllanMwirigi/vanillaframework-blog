@@ -1,5 +1,8 @@
-# Collab Space
+# Vanilla Framework Blog
 React and Typescript Application that displays blog posts with the Vanilla Framework by Canonical
+
+## Live link
+[https://vanilla-blog.surge.sh](https://vanilla-blog.surge.sh)
 
 ## Project Setup
 ### Clone the repository.
