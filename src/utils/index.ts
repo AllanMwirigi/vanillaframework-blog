@@ -1,3 +1,4 @@
+import { DateTime } from 'luxon';
 import { Post } from '../hooks/posts/model';
 
 export const processPosts = (fetchedPosts: Post[]) => {
@@ -22,3 +23,7 @@ export const processPosts = (fetchedPosts: Post[]) => {
   });
   return posts;
 };
+
+export const isoToLocal = (time: string) => (
+  DateTime.fromISO(time).toLocal().toFormat('dd MMMM yyyy')
+);

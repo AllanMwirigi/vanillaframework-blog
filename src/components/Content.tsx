@@ -28,8 +28,10 @@ function Content() {
   }
 
   return (
-    <div className="row">
-      {blogCards}
+    <div className="p-strip--light">
+      <div className="row u-equal-height">
+        {blogCards}
+      </div>
     </div>
   );
 }

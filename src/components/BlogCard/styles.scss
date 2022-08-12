@@ -1,9 +1,17 @@
-.blog-post-header {
-  border-top: 3px solid purple;
+.blog-post-col {
+  margin-bottom: 1.25rem;
 }
-.p-card__inner h3 a {
-  font-weight: 300;
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  border-top: 3px solid purple;
+  min-height: 100%;
 }
 .header-break {
-  margin-bottom: 15px;
+  margin-bottom: 0.75rem;
+}
+.blog-card-footer {
+  border-top: 1px dotted gray;
+  margin-top: auto;
+  padding-top: 0.5rem;
 }
