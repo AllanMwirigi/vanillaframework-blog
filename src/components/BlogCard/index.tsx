@@ -1,37 +1,42 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable no-underscore-dangle */
 import React from 'react';
+import { Post } from '../../hooks/posts/model';
 import './styles.scss';
 
-function BlogCard() {
+type PropTypes = { post: Post }
+
+function BlogCard({ post }: PropTypes) {
   return (
     <div className="col-4">
       <div className="p-card blog-post-header">
         <header>
-          <h4>CLOUD AND SERVER</h4>
+          <h4>{post.topicName || 'Miscellaneous'}</h4>
         </header>
         <hr className="header-break" />
         <img
           className="p-card__image"
-          src="https://assets.ubuntu.com/v1/0f33d832-The-State-of-Robotics.jpg"
+          src={post.featured_media}
           alt="Blog Post"
         />
         <div className="p-card__inner">
           <h3>
-            <a href="#">The power of installed based snap metrics</a>
+            <a href={post.link}>{post.title.rendered}</a>
           </h3>
           <p>
             <em>
               by
               {' '}
-              <a href="#">Bartek Szopka</a>
+              <a href={post._embedded.author[0].link}>{post._embedded.author[0].name}</a>
               {' '}
-              on 21st August 2021
+              on
+              {' '}
+              {post.date_gmt}
             </em>
           </p>
         </div>
         <hr className="u-no-margin--bottom" />
         <div className="p-card__inner">
-          Article
+          {post.categoryName || 'Miscellaneous'}
         </div>
       </div>
     </div>
