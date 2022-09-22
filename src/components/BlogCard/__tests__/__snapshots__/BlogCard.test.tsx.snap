@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlogCard matches snapshot 1`] = `
+<div
+  className="col-4 blog-post-col"
+>
+  <div
+    className="p-card--highlighted blog-post"
+  >
+    <header>
+      <h4
+        className="p-muted-heading"
+      >
+        People and culture
+      </h4>
+    </header>
+    <hr
+      className="header-break"
+    />
+    <div
+      className="p-card__content"
+    >
+      <img
+        alt="Blog Post"
+        className="p-card__image"
+        src="https://ubuntu.com/wp-content/uploads/5288/Title-Cards.jpg"
+      />
+      <div>
+        <h4>
+          <a
+            href="https://ubuntu.com/blog/travel-clis-and-sticky-notes-lilyanas-life-as-a-canonical-ux-designer/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Travel, CLIs, and sticky notes: Lilyana’s life as a Canonical UX designer
+          </a>
+        </h4>
+        <p>
+          <em>
+            By
+             
+            <a
+              href="https://ubuntu.com/blog/author/cmoullec/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              cmoullec
+            </a>
+             
+            on
+             
+            25 August 2020
+          </em>
+        </p>
+      </div>
+    </div>
+    <div
+      className="blog-card-footer"
+    >
+      <span
+        className="p-text--small"
+      >
+        Articles
+      </span>
+    </div>
+  </div>
+</div>
+`;
