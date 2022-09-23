@@ -22,9 +22,11 @@ In the project directory, run:\
 The static files are output to the `dist` folder.
 
 ## Testing the app
-In the project directory, run:\
-`yarn test`
+For unit tests, run:\
+`yarn test`\
+For unit tests in watch mode, run:\
+`yarn test:watch`\
 
-To test in watch mode
-`yarn test:watch`
+For E2E testing, run:\
+`yarn test:cypress`
 
