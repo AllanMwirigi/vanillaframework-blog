@@ -18,14 +18,16 @@ In the project directory, run:\
 
 ## Building the app
 In the project directory, run:\
-`yarn build`\
+`yarn build`
+
 The static files are output to the `dist` folder.
 
 ## Testing the app
 For unit tests, run:\
-`yarn test`\
+`yarn test`
+
 For unit tests in watch mode, run:\
-`yarn test:watch`\
+`yarn test:watch`
 
 For E2E testing, run:\
 `yarn test:cypress`
